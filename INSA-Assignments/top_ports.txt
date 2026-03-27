@@ -1,0 +1,64 @@
+Top 30 Ports & Their Common Vulnerabilities
+-------------------------------------------
+---------------------------------------------------------------------------------------------------
+| Port               | Service              | Typical Vulnerabilities                             |
+| ------------------ | -------------------- | --------------------------------------------------- |
+| **21**             | FTP                  | Cleartext credentials, anonymous login, brute force |
+| **22**             | SSH                  | Weak passwords, brute force, outdated ciphers       |
+| **23**             | Telnet               | No encryption, credential sniffing                  |
+| **25**             | SMTP                 | Open relay abuse, spoofing, phishing                |
+| **53**             | DNS                  | Cache poisoning, amplification (DDoS)               |
+| **67/68**          | DHCP                 | Rogue DHCP servers, starvation attacks              |
+| **69**             | TFTP                 | No authentication, file disclosure                  |
+| **80**             | HTTP                 | XSS, SQL injection, directory traversal             |
+| **110**            | POP3                 | Cleartext auth, credential theft                    |
+| **119**            | NNTP                 | Rare, but misconfig access exposure                 |
+| **123**            | NTP                  | Amplification attacks, spoofing                     |
+| **137-139**        | NetBIOS              | Information leakage, SMB attacks                    |
+| **143**            | IMAP                 | Cleartext login, brute force                        |
+| **161**            | SNMP                 | Default community strings (public/private)          |
+| **179**            | BGP                  | Route hijacking (if misconfigured)                  |
+| **194**            | IRC                  | Botnet control channels                             |
+| **389**            | LDAP                 | Injection, anonymous bind                           |
+| **443**            | HTTPS                | Weak TLS, misconfig SSL, cert issues                |
+| **445**            | SMB                  | EternalBlue (WannaCry), lateral movement            |
+| **465**            | SMTPS                | Misconfig TLS                                       |
+| **500**            | ISAKMP (IPsec)       | Weak VPN configs                                    |
+| **514**            | Syslog               | Log injection, info leakage                         |
+| **515**            | LPD                  | Unauthorized print jobs                             |
+| **520**            | RIP                  | Route poisoning                                     |
+| **587**            | SMTP (submission)    | Auth brute force                                    |
+| **636**            | LDAPS                | Weak certs, misconfig                               |
+| **989/990**        | FTPS                 | Improper TLS config                                 |
+| **1433**           | MSSQL                | SQL injection, weak creds                           |
+| **1521**           | Oracle DB            | Default creds, TNS poisoning                        |
+| **2049**           | NFS                  | Unauthorized file access                            |
+| **2082/2083**      | cPanel               | Brute force, outdated installs                      |
+| **2181**           | Zookeeper            | No auth → full control                              |
+| **2222**           | DirectAdmin          | Weak creds                                          |
+| **2375**           | Docker (unencrypted) | Remote container takeover                           |
+| **2483/2484**      | Oracle DB (TCPS)     | TLS misconfig                                       |
+| **3000**           | Dev servers          | Exposed debug apps                                  |
+| **3128**           | Proxy (Squid)        | Open proxy abuse                                    |
+| **3306**           | MySQL                | Weak passwords, remote access                       |
+| **3389**           | RDP                  | Brute force, BlueKeep                               |
+| **3690**           | Subversion           | Repo exposure                                       |
+| **4444**           | Metasploit default   | Backdoor usage                                      |
+| **5432**           | PostgreSQL           | Weak creds, exposure                                |
+| **5601**           | Kibana               | No auth dashboards                                  |
+| **5672**           | AMQP (RabbitMQ)      | Default creds                                       |
+| **5900**           | VNC                  | No encryption, weak auth                            |
+| **5985/5986**      | WinRM                | Remote execution abuse                              |
+| **6379**           | Redis                | No auth → data takeover                             |
+| **6667**           | IRC                  | Botnets                                             |
+| **7001/7002**      | WebLogic             | RCE exploits                                        |
+| **8000/8008/8080** | Alt HTTP             | Exposed admin panels                                |
+| **8081**           | Proxy/Admin          | Open access                                         |
+| **8443**           | HTTPS alt            | Weak TLS                                            |
+| **9000**           | SonarQube            | Default creds                                       |
+| **9042**           | Cassandra            | No auth setups                                      |
+| **9092**           | Kafka                | Unauthorized access                                 |
+| **9200**           | Elasticsearch        | Data exposure (no auth)                             |
+| **9418**           | Git                  | Repo leaks                                          |
+| **27017**          | MongoDB              | No auth → data leaks                                |
+---------------------------------------------------------------------------------------------------
